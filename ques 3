@@ -18,7 +18,7 @@ using namespace std;
 
     int main(){
         
-         Car A ("astar", 2500000);
+         Car A ("suzuki", 2500000);
          A.display();
          Car B ("toyota", 3000000);
          B.display();
