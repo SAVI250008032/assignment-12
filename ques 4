@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+    class Box{
+         int length, breadth, height;
+    public:
+         Box (){
+             length = 1;
+             breadth = 1;
+             height = 1;
+         }
+         Box (int x){
+             length = breadth = height = x;
+         }
+         Box (int l, int b, int h){
+             length = l;
+             breadth = b;
+             height = h;
+         }
+         void Volume(){
+             int Volume = length * breadth * height;
+             cout << "Volume: " << Volume << endl;
+         }
+     
+};
+
+    int main(){
+        Box A;
+        Box B(7);
+        Box C(8,4,2);
+        cout << "volume of Box A: ";
+        A.Volume();
+        cout << "volume of Box B: ";
+        B.Volume();
+        cout << "volume of Box C: ";
+        C.Volume();
+    return 0;
+}
